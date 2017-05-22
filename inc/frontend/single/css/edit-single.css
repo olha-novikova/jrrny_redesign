@@ -1,0 +1,48 @@
+.post-element-actions .btn {
+	margin: 10px 10px 10px 0px;
+}
+
+a.btn {
+	color: #fff !important;
+}
+
+.add-more {
+	margin-bottom: 10px;
+}
+
+.form-group textarea.form-control {
+	min-height: 200px;
+}
+
+#mosaic {
+	position: relative;
+}
+
+#mosaic .mosaic-element {
+	position: absolute;
+	display: none;
+}
+
+#mosaic .mosaic-element:not(:nth-child(1)):not(:nth-child(2)) {
+	margin-top: 20px;
+}
+
+#mosaic .mosaic-element img {
+	width: 100%;
+}
+
+.edits-container {
+	text-align: center;
+}
+
+.edits-container .edit-attr {
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.edits-container .edit-attr i.fa {
+	font-size: 24px;
+}
+.thumb-selected {
+    color: #f0ad2e;
+}

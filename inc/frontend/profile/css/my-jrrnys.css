@@ -1,0 +1,7 @@
+.bootbox .modal-dialog {
+	margin: 10% auto;
+}
+
+.bootbox .close {
+	color: #000 !important;
+}

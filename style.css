@@ -1,0 +1,20 @@
+/*
+Theme Name:     Matador Child
+Theme URI:      http://themestockyard.com/matador
+Description:    Child theme for the Matador theme
+Author:         themestockyard
+Author URI:     http://themestockyard.com/
+Template:       matador
+Version:        1.0
+*/
+#page-share {
+    float: none;
+    margin: 0 0 15px;
+    padding-top: 5px;
+}
+
+.adslot_1 { width: 100%; height: 300px; } 
+@media (min-width:500px) { .adslot_1 {  width: 100%; height: 350px; } }
+
+.adslot_2 { width: 100%; height: 300px; }
+@media (min-width:500px) { .adslot_2 {  width: 100%; height: 100px; } }

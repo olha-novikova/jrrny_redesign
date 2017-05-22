@@ -1,0 +1,109 @@
+.map {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+#small-map{
+    display: block;
+    width: 100%;
+    height: 250px;  
+}
+#place-modal .close {
+    color: #000 !important;
+    opacity: 0.5;
+}
+#place-modal .modal-dialog {
+    margin: 160px auto 30px;
+    width: 70%;
+}
+#place-modal .modal-content{
+    border-radius: 0px;
+}
+#place-modal .modal-header{
+    text-align: center;
+    color: #878787;
+    border-width: 0px;
+}
+#place-modal .modal-footer{
+    border-width: 0px;
+}
+#place-modal .modal-header .modal-title{
+    font-size: 28px;
+    color: #878787;
+    font-family: 'montserratlight';
+    
+}
+#place-modal .modal-body{
+    background-color: #fbfaf8;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    margin: 0 40px;
+    padding: 15px 15px 0;
+}
+#place-modal .map-pop-item{
+    position: relative;
+    margin-bottom: 15px;
+}
+#place-modal .map-pop-item .map-pop-link{
+    position: absolute;
+    z-index: 2;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+#place-modal .map-pop-item .map-pop-thumbnail{
+   position: relative;
+   overflow: hidden;
+   height: 140px;
+}
+#place-modal .map-pop-item .map-pop-thumbnail img{
+    width: 100%;
+    object-fit: cover;
+    min-height: 140px;
+}
+#place-modal .map-pop-item .map-pop-content{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left:0;
+    padding: 5px;
+    background-color: #fff;
+    
+}
+#place-modal .map-pop-item .title{
+    color: #878787;
+    font-size: 12px;
+}
+#place-modal .place-posts .place-text{
+    color: #878787;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+#place-modal .btn{    
+    border-radius: 2px;
+}
+
+.cluster{
+    font-weight: bold;
+}
+.cluster:before{
+    content: '';
+    position: absolute; 
+    left: -7px;    
+    top: -27px;
+    width: 20px;
+    height: 30px;
+    background-image: url('../../../../images/marker_blue20x30.png');
+}
+/*
+#place-modal .place-posts{
+    text-align: center;
+}
+#place-modal .place-posts .item{
+    float: none !important;
+    display: inline-block;
+    
+}
+*/

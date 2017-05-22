@@ -1,0 +1,59 @@
+#profile-update-form .user-message {
+    position: relative;
+    top: -30px;
+}
+
+#profile-update-form input[type=text], input[type=email], input[type=password] {
+	margin-top: 0px;
+	border: 1px solid #ccc;
+}
+
+#profile-update-form #profile-pic {
+	height: 0px;
+	width: 0px;
+	visibility: hidden;
+}
+
+#profile-update-form .avatar {
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#profile-update-form .input-group {
+	margin-bottom: 35px;
+}
+
+#profile-update-form textarea {
+	min-height: 150px;
+}
+
+#profile-update-form textarea, select {
+	background: #eee;
+}
+
+#profile-update-form .profile-action-btn {
+	margin-right: 20px;
+	color: #fff;
+}
+
+#profile-badge {
+	width: 100%;
+	min-height: 206px;
+}
+
+#profile-badge h1,h2,h3,h4,h5,h6 {
+	margin-top: 0px;
+}
+
+/*#profile-badge .profile-badge-item {
+	padding: 20px 20px 0px 20px;
+}*/
+
+#profile-badge-container {
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+#edit-profile_badge {
+	margin-top: 20px;
+}

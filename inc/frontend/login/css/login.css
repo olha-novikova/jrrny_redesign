@@ -1,0 +1,44 @@
+.feedback-warning {
+	color: #8a6d3b;
+}
+
+.form-login-signup {
+	margin-top: 75px;
+	min-height: 400px;
+}
+
+.form-login-signup div.input-group:not(:last-child) {
+	margin-top: 35px;
+}
+
+.form-login-signup div.input-group:last-child {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+#login_btn, #signup_btn {
+	margin-bottom: 15px;
+}
+
+.form-login-signup div.input-group input.form-control {
+	border: 1px solid #ccc;
+    margin: 0;
+}
+
+.form-login-signup .has-error .form-control {
+	border-color: #a94442 !important;
+}
+
+.form-login-signup .has-warning .form-control {
+    border-color: #8a6d3b !important;
+}
+
+/*#city-input-container {*/
+	/*display: none;*/
+	/*opacity: 0;*/
+/*}*/
+
+#country {
+	background-color: #eee;
+	color: #808080;
+}

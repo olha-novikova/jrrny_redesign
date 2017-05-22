@@ -1,0 +1,431 @@
+
+.upload,
+.upload p,
+.upload h1, .upload h2, .upload h3, .upload h4, .upload h5, .upload h6{
+    color: #000;
+    
+}
+.uploader-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.uploader-header h2{
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: "Dosis Semibold";
+    font-weight: bold;
+}
+
+.uploader-header h2 .flaticon:before,
+.uploader-header h2 .flaticon:after{
+    position: relative;
+    font-size: 40px;    
+}
+
+.uploader-header p{
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: 'Dosis Regular';
+    color: #727272;
+}
+.single #form-journey{
+    margin-top: 20px;
+    
+}
+#form-journey .form-control{
+    background-color: transparent;
+    border: 2px solid #cccccc;
+    border-radius: 10px !important;
+    box-shadow: none;
+    color: #202020;
+    display: inline-block;
+    font-size: 18px;
+    font-style: italic;
+    height: 50px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+#form-journey textarea.form-control {
+    text-align: left !important;
+    border: 2px solid #cccccc;
+}
+
+#form-journey .form-control::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+#form-journey .form-control:-ms-input-placeholder {
+  color: #777;
+}
+#form-journey .form-control::-webkit-input-placeholder {
+  color: #777;
+}
+#form-journey .input-group .input-group-addon{
+    height: 38px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #000;    
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding-right: 25px;
+}
+#form-journey .input-group-addon .flaticon:before,
+#form-journey .input-group-addon .flaticon:after{
+    color: #ADADAD;
+    position: relative;
+    margin-left: 0;
+    font-size: 40px;
+    top: -2px;
+}
+#form-journey  .input-group.flaticon-absolute .input-group-addon {
+    padding-right: 60px;
+}
+#form-journey  .input-group.flaticon-absolute .input-group-addon .flaticon:before,
+#form-journey  .input-group.flaticon-absolute .input-group-addon .flaticon:after{
+    position: absolute;
+    left: auto;
+    right: 10px;
+    top: 2px;
+}
+#form-journey label {
+    color: #707070;
+    font-family: "Dosis";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    min-height: 38px;
+    position: relative;
+}
+#form-journey label[for="story"] {
+    font-size: 17px;
+    
+}
+#form-journey label .flaticon:before,
+#form-journey label .flaticon:after{
+    color: #ADADAD;
+    position: absolute;
+    margin-left: 0;   
+    font-size: 40px;
+    top: -6px;
+    left: 0;
+}
+#form-journey .btn{
+    font-family: "Dosis";
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 8px 15px;
+}
+#form-journey .btn:last-child{
+    margin-left: 10px;
+}
+@media (max-width: 767px) {
+    #form-journey .no-padding{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+@media (max-width: 396px) {
+    
+    #form-journey .btn{
+        width: 100%;
+    }
+    #form-journey .btn:last-child{
+        margin-left: 0px;    
+    }
+    
+}
+.err-message.user-message,
+.err-message-dropzone{
+    bottom: -16px;
+    left: 80px;
+    position: absolute !important;
+    top: auto !important;
+    margin-top: 0px !important;
+}
+.flaticon-absolute .err-message.user-message{
+    bottom: -20px;
+    left: 110px;
+}
+.jrrny-dropzones-container .err-message.user-message{
+    bottom: 0;
+    left: 15px;
+}
+#after-upload-modal .modal-content {
+    margin: 30px auto;
+    max-width: 600px;
+    transform: translate(0px, 0px);
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    border-radius: 0;
+    border-width: 0;
+    font-family: "montserrat";
+    text-align: center;
+}
+#after-upload-modal .modal-body {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+}
+#after-upload-modal .modal-body [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 40px;
+}
+#after-upload-modal .modal-body h3{
+    color: #fff;
+    font-weight: bold;
+}
+#after-upload-modal .modal-body .modal-social{
+    margin: 0 auto;
+}
+#after-upload-modal .modal-body .social {
+    text-align: left;
+    padding-top: 10px;
+}
+#after-upload-modal .modal-body a {
+    color: #fff;
+}
+#after-upload-modal .modal-body a:hover {
+    text-decoration: none;
+}
+#after-upload-modal .modal-body .link-to-jrrny {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+    /*.image-upload-dropzone {
+        border: 2px dashed #ddd;
+        margin: 75px 0px;
+        color: rgba(255,255,255,0.8);
+        background: #333;
+    }
+
+    #form-journey input[type=text], textarea {
+        border: 1px solid #ccc;
+    }*/
+
+#form-journey .dz-message.dz-default {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* text-align: center; */
+    height: 205px;
+    display: table;
+}
+
+#form-journey .dz-message.dz-default span {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+#form-journey .dropzone.dz-started .dz-message {
+	display: none;
+}
+
+#place-activity .place-activity-txt {
+    left: 40.1666%;
+    /* float: left; */
+    position: absolute;
+    top: 50%;
+    /* width: 100%; */
+    text-align: center;
+    /* left: 0px; */
+    transform: translateY(-25%);
+    text-transform: uppercase;
+    font-weight: bolder;
+    z-index: 0;
+}
+
+#place-activity .form-group {
+	z-index: 1;
+}
+
+#place-activity #activity-container {
+	float: right;
+	padding-right: 0px;
+}
+
+#place-activity #place-container {
+	padding-left: 0px;
+}
+
+#place-activity {
+	position: relative;
+}
+.form-horizontal .image-upload-dropzone {
+    border: 2px dashed #ccc;
+    margin: 0 0 20px;
+    color: #ccc;
+    background: #fff;
+    min-height: 194px;
+    padding: 18px;
+    font-size: 16px;
+}
+.form-horizontal .image-upload-dropzone#jrrny-images-dropzone{
+    min-height: 461px;
+}
+.wp-editor-wrap{
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+.sm-upload .image-upload-dropzone {
+    min-height: 200px;    
+}
+.sm-upload .image-upload-dropzone.dz-clickable.dz-started{
+    min-height: 240px;
+    
+}
+.image-upload-dropzone p{
+	color: #838383;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+.image-upload-dropzone p i.drop-here{
+    background: url('upload_icon.jpg') no-repeat 50% 50%;
+    height: 59px;
+    width: 80px;
+    display: inline-block;
+}
+.image-upload-dropzone .flaticon:before,
+.image-upload-dropzone .flaticon:after{
+    color: #ADADAD;
+    position: relative;
+    margin-left: 0;
+    font-size: 40px;
+    top: -2px;
+}
+.upload#main-container-wrap,
+.edit#main-container-wrap
+{
+    margin: 40px 0 200px;
+}
+.upload-page .image-upload-dropzone {
+    margin: 5px 0 25px;
+}
+#hotel-featured-image {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/*.image-upload-dropzone .dz-message {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.image-upload-dropzone .dz-message {
+	font-size: 22px;
+	font-weight: 600;
+}
+*/
+#story {
+	resize: vertical;
+	min-height: 150px;
+	background: #eee;
+}
+
+.file-input-preview {
+	width: 100px;
+	margin-bottom: 15px;
+	background: #ccc;
+}
+
+.err-message {
+	color: #EE4643;
+}
+
+.err-message-dropzone {
+	position: relative;
+	top: -65px;
+}/*
+
+.image-upload-dropzone .dz-default.dz-message .dz-default-addit {
+	font-size: 15px;
+	font-weight: normal;
+}*/
+
+.image-upload-dropzone .dz-image {
+	box-shadow: 0px 0px 10px 3px #24A8E0;
+    border: 1px solid #aaa;
+}
+
+.image-upload-dropzone .dz-preview.dz-image-preview {
+	background: transparent;
+}
+
+.image-upload-dropzone .dz-preview.dz-image-preview .dz-additional {
+	position: relative;
+	top: 10px;
+	text-align: center;
+}
+.image-upload-dropzone div:nth-child(2) .dz-additional::before{    
+    content: 'Main image';
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #F0AD2E;
+    position: relative;
+}
+.single .image-upload-dropzone div:nth-child(2) .dz-additional::before{
+    position: absolute;
+    text-align: center;
+    top: 22px;
+    width: 100%;
+    z-index: 1;
+}
+.image-upload-dropzone .dz-preview.dz-image-preview .dz-additional .fa {
+	font-size: 22px;
+}
+
+.image-upload-dropzone .dz-preview.dz-image-preview .dz-additional .dz-set-thumb {
+	font-size: 11px;
+	font-weight: 600;
+	position: relative;
+    top: -9px;
+    letter-spacing: 1px;
+}
+
+.image-upload-dropzone .dz-preview.dz-image-preview .dz-additional .dz-addit-elem {
+	cursor: pointer;
+	margin: 0px 8px;
+}
+
+.image-upload-dropzone .dz-preview.dz-image-preview .dz-additional .dz-remove-image {
+	color: #EE4643;
+}
+
+.thumb-selected {
+	color: #F0AD2E;
+}
+
+.image-upload-dropzone .dz-preview.dz-image-preview .dz-additional .dz-set-thumb {
+	transition: all 0.5s ease;
+}
+
+#form-journey textarea {
+	min-height: 250px;
+}
+
+.dropzone .dz-preview.dz-error .dz-error-message {
+	opacity: 1;
+	top: 130px !important;
+}
+
+@media screen and (max-width: 992px) {
+	#place-activity .place-activity-txt {
+		left: 0;
+		right: 0;
+	}
+	#place-activity #activity-container, #place-container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+

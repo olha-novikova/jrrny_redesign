@@ -1,0 +1,30 @@
+.ekko-lightbox.modal .modal-body{
+    padding: 0;
+}
+.modal-backdrop.in {
+    opacity: 0.85;
+}
+.ekko-lightbox.modal .modal-header {
+    background: transparent none repeat scroll 0 0;
+    border-bottom: medium none;
+    min-height: 16.43px;
+    padding: 0;
+}
+.ekko-lightbox.modal .modal-header .close{
+    opacity: 1;
+}
+.ekko-lightbox.modal .modal-header .close span{
+    color: #fff;
+}
+.ekko-lightbox.modal .modal-content{
+    background: transparent;
+}
+.ekko-lightbox a,
+.ekko-lightbox a:hover,
+.ekko-lightbox a:visited,
+.ekko-lightbox a:active,
+.ekko-lightbox a:focus{
+    opacity: 1;
+    text-decoration: none;
+    color: #fff;
+}
