@@ -70,7 +70,7 @@ else {?>
             'posts_per_page'    => 1,
             'limit'             => 1,
             'show_pagination'   => false,
-            'show_category'     => false
+            'show_category'     => true
 
         ];
 
