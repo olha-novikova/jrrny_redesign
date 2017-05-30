@@ -31,9 +31,12 @@
     }
     #logo-nav-wrap{padding: 0;}
 }
+
+
 @media only screen and (max-width: 980px) {
     #top-bar > .middle-area { left: 40px; }
-    
+    .span4{  width: 50%;}
+
 }
 @media only screen and (max-width: 959px) {
     #top-bar > .middle-area { display: inline-block; width: 100%; }

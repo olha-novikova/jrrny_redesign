@@ -47,9 +47,11 @@ $category = ts_get_the_category('category', 'big_array:1', '', $post->ID);
 </div>
 <?php } ?>
 
-<div id="featured-content" class="container">
-    <?php echo apply_filters( 'the_content', $post->post_content ); ?>
-</div>
+<?php if ($post->post_content != ''){?>
+    <div id="featured-content" class="container">
+        <?php echo apply_filters( 'the_content', $post->post_content ); ?>
+    </div>
+<?php } ?>
 
 <?php echo do_shortcode('[show_video]'); ?>
 
@@ -88,6 +90,7 @@ $atts = [
     'show_title'        => 1,
     'show_category'     => 'true'
 ];
+
 ?>
 <div>
     <div class="header-section">

@@ -286,7 +286,7 @@ else {
                         }
                     },
                     {
-                        breakpoint: 580,
+                        breakpoint: 620,
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1

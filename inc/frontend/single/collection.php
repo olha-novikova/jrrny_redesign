@@ -50,9 +50,11 @@ $video_section_options = get_post_meta($post->ID,'video_section_option',true);
     <span class="cat-name"> <?= $category[0]['name'] ?></span>
 </div>
 <?php } ?>
+<?php if ($post->post_content != ''){?>
 <div id="featured-content" class="container">
     <?php echo apply_filters( 'the_content', $post->post_content ); ?>
 </div>
+<?php } ?>
 <div class="clear"></div>
 
 <?php if( $video_section_options != '' && $video_section_options != 'disabled' ){ ?>

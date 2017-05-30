@@ -172,7 +172,7 @@ if ($ts_query->have_posts()) :
                     }
                 },
                 {
-                    breakpoint: 580,
+                    breakpoint: 620,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1

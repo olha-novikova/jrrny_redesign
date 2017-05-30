@@ -59,7 +59,7 @@ $atts = (isset($atts)) ? $atts : array();
                         
                         ?>
 
-                        <div id="post-<?php echo esc_attr($ts_query->post->ID);?>" class="hentry entry span4">
+                        <div id="post-<?php echo esc_attr($ts_query->post->ID);?>" class="hentry entry col-md-4">
                             <div class="post-content <?php plc_category_unlinked();?>">
                                 <div class="post-category post-category-heading mimic-small uppercase <?php echo ts_loop_post_category_class($atts, $media);?>">
                                     <a href="<?php echo ts_get_term_link($category[0]);?>">
@@ -138,11 +138,7 @@ $atts = (isset($atts)) ? $atts : array();
                                 ?>
                             </div>
                         </div>
-
                         <?php
-                                echo ($i == 3) ? '<div class="clear"></div>' : '';
-                                $i++;
-                                $i = ($i == 4) ? 1 : $i;
                             endwhile;
 
                             $pagination = (isset($atts['show_pagination']) && $atts['show_pagination'] === false) ? false : true;
