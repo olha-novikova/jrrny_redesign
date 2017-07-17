@@ -1943,3 +1943,105 @@ function plc_avatar( $avatar, $id_or_email, $size, $default, $alt ) {
 
     return $avatar;
 }
+
+add_filter('wp_handle_upload_prefilter','handle_upload_prefilter');
+
+function handle_upload_prefilter($file) {
+    $img=getimagesize($file['tmp_name']);
+    $minimum = array('width' => '1600', 'height' => '600');
+    $width= $img[0];
+    $height =$img[1];
+
+    if ($width < $minimum['width'] ){
+        return array("error"=>"Image dimensions are too small. Minimum width is {$minimum['width']}px. Uploaded image width is $width px.");
+    } elseif ($height <  $minimum['height']){
+        return array("error"=>"Image dimensions are too small. Minimum height is {$minimum['height']}px. Uploaded image width is $width px.");
+    } else {
+        return $file;
+    }
+}
+
+
+add_action('save_post', 'wpds_check_thumbnail');
+add_action('save_post', 'wpds_check_thumbnail_size');
+
+add_action('admin_notices', 'wpds_thumbnail_error');
+add_action('admin_notices', 'wpds_thumbnail_error_size');
+function wpds_check_thumbnail($post_id) {
+    // change to any custom post type
+    if(    get_post_type($post_id) != 'post'
+        && get_post_type($post_id) != 'featured_destination'
+        && get_post_type($post_id) != 'sponsored_post'
+        && get_post_type($post_id) != 'contest'
+        && get_post_type($post_id) != 'articles'
+    )
+        return;
+
+    if ( !has_post_thumbnail( $post_id ) ) {
+
+        set_transient( "has_post_thumbnail", "no" );
+
+        remove_action('save_post', 'wpds_check_thumbnail');
+
+        wp_update_post(array('ID' => $post_id, 'post_status' => 'draft'));
+
+        add_action('save_post', 'wpds_check_thumbnail');
+    } else {
+        delete_transient( "has_post_thumbnail" );
+    }
+}
+function wpds_check_thumbnail_size($post_id) {
+    // change to any custom post type
+    if(    get_post_type($post_id) != 'post'
+        && get_post_type($post_id) != 'featured_destination'
+        && get_post_type($post_id) != 'sponsored_post'
+        && get_post_type($post_id) != 'contest'
+        && get_post_type($post_id) != 'articles'
+    )
+        return;
+
+    if ( !get_the_post_thumbnail( $post_id, 'super-large' ) ) {
+        // set a transient to show the users an admin message
+        set_transient( "wrong_size", "yes" );
+        // unhook this function so it doesn't loop infinitely
+        remove_action('save_post', 'wpds_check_thumbnail_size');
+        // update the post set it to draft
+        wp_update_post(array('ID' => $post_id, 'post_status' => 'draft'));
+
+        add_action('save_post', 'wpds_check_thumbnail_size');
+    } else {
+        delete_transient( "wrong_size" );
+    }
+}
+function wpds_thumbnail_error()
+{
+    // check if the transient is set, and display the error message
+    if ( get_transient( "has_post_thumbnail" ) == "no" ) {
+        echo "<div id='message' class='error'><p><strong>You must select Featured Image. Your Post is saved but it can not be published.</strong></p></div>";
+        delete_transient( "has_post_thumbnail" );
+    }
+}
+function wpds_thumbnail_error_size()
+{
+    // check if the transient is set, and display the error message
+    if ( get_transient( "wrong_size" ) == "yes" ) {
+        echo "<div id='message' class='error'><p><strong>Featured Image should has width at least 1600px </strong></p></div>";
+        delete_transient( "wrong_size" );
+    }
+}
+
+function remove_then_add_image_sizes() {
+
+    add_image_size('super-large', 1600, 99999);
+}
+add_action('init', 'remove_then_add_image_sizes');
+
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'category-thumb' => 'super-large',
+    ) );
+}
+

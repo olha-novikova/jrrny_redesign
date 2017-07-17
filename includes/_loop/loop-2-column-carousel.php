@@ -160,8 +160,8 @@ if ($ts_query->have_posts()) :
             dots: true,
             arrows: false,
             infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             adaptiveHeight: false,
             responsive: [
                 {

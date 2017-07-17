@@ -246,7 +246,7 @@ if ( $show_home_video == 1){
                                     <div class="featured-video ">
                                         <img src="<?php echo esc_url($video_img2); ?>" alt="" width="480">
 
-                                        <a class="featured-video-link modal-link" data-title="<?php echo $video_text_1; ?>" data-toggle="modal" data-src="http://www.youtube.com/embed/<?php echo $video_id2;?>?rel=0&wmode=transparent&fs=0"  data-target="#videoModal"></a>
+                                        <a class="featured-video-link modal-link" data-title="<?php echo $video_text_2; ?>" data-toggle="modal" data-src="http://www.youtube.com/embed/<?php echo $video_id2;?>?rel=0&wmode=transparent&fs=0"  data-target="#videoModal"></a>
                                     </div>
                                 </div>
                                 <?php if ( $video_text_2 ){?>
@@ -269,7 +269,7 @@ if ( $show_home_video == 1){
                                 <div class="featured-media-wrap ts-featured-media-standard" style="opacity: 1;">
                                     <div class="featured-video ">
                                         <img src="<?php echo esc_url($video_img3); ?>" alt="" width="480">
-                                        <a class="featured-video-link modal-link" data-title="<?php echo $video_text_1; ?>" data-toggle="modal" data-src="http://www.youtube.com/embed/<?php echo $video_id3;?>?rel=0&wmode=transparent&fs=0" data-target="#videoModal"></a>
+                                        <a class="featured-video-link modal-link" data-title="<?php echo $video_text_3; ?>" data-toggle="modal" data-src="http://www.youtube.com/embed/<?php echo $video_id3;?>?rel=0&wmode=transparent&fs=0" data-target="#videoModal"></a>
                                     </div>
                                 </div>
                                 <?php if ( $video_text_3 ){?>

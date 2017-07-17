@@ -1078,7 +1078,7 @@ function ts_blog_loop($layout = '', $atts = array())
         $layout = '2columnbanner';
         $test_layout = '2-column-banner';
     endif;
-    
+
     if(trim($test_layout) && file_exists(TS_SERVER_PATH . '/includes/_loop/loop'.$test_layout.'.php')) :
         include(locate_template('includes/_loop/loop'.$test_layout.'.php'));
     elseif(in_array($layout, array('masonry', 'grid', 'masonrygrid', 'masonry2columns', 'masonry3columns'))) :
@@ -1105,6 +1105,8 @@ function ts_blog_loop($layout = '', $atts = array())
         include(locate_template('includes/_loop/loop-thumbnail.php'));
     elseif(in_array($layout, array('2columnbanner', '2columnbanners'))) :
         include(locate_template('includes/_loop/loop-2-column-banner.php'));
+    elseif(in_array($layout, array('2columncarousel'))) :
+        include(locate_template('includes/_loop/loop-2-column-carousel.php'));
     else :
         include(locate_template('includes/_loop/loop.php'));
     endif;
@@ -6346,11 +6348,13 @@ function plc_get_primary_posts(){
         get_option('primary_5'),
         get_option('primary_6')
     ];
+
     foreach($primaryPost as $key => $value) {  
         if($primaryPost[$key] == '') {
           $primaryPost[$key] = plc_get_random_post($primaryPost);
         }
     }
+
     return $primaryPost;
 }
 function plc_get_random_post($notIn = null, $post_type = array("'post'", "'sponsored_post'", "'featured_destination'", "'contest'"))

@@ -380,6 +380,7 @@
             nextText: '<i class="fa fa-chevron-right"></i>',
             pauseOnAction: true,
             pauseOnHover: false
+
         });
     });
     $('.loop-slider-wrap.flexslider').imagesLoaded(function() {

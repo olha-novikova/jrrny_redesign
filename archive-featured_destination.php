@@ -50,6 +50,9 @@ if($post): setup_postdata( $post );
             $current = 0;
 
             foreach ($rows as $key=>$row ){
+                $post = $row['featured_destination_jrrnys'];
+                if ( $post->post_status!= 'publish') continue;
+               //echo "<pre>"; print_r( $post->post_status); echo "</pre>";
                 if ($i == 0)
                     $sliders[$i][] = $row;
                 else{

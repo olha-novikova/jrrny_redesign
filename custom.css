@@ -6346,3 +6346,81 @@ ol.commentlist .comment-avatar img {
 #following-section-2 .hentry.entry {
     padding: 0 1px;
 }
+.loop-3-column-wrap .loop .entry .post {
+    color: #fff;
+    left: 50px;
+    letter-spacing: 0;
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+}
+
+.loop-3-column-wrap .loop .post-category-heading {
+    left: 50px;
+    position: absolute;
+    right: 50px;
+    top: 10%;
+    z-index: 3;
+
+}
+.loop-3-column-wrap .loop .post-category-heading  a {
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+.loop-3-column-wrap .post-content.category_13 .post-category-heading {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%) repeat scroll 0 0;
+}
+.loop-3-column-wrap .post-content.category_13 .post-category-heading a{
+    color: #05a4e6;
+}
+@media (max-width: 1500px){
+    .loop-3-column-wrap .loop .post-category-heading {
+        top: 5%;
+    }
+    .loop-3-column-wrap .slick-list .post-content .title-date, .loop-3-column-wrap .post-content .post-data{
+        top: 10%;
+    }
+}
+@media (max-width: 1220px){
+    .loop-3-column-wrap .loop .post-category-heading {
+        left: 10px;
+        right: 10px;
+    }
+    .loop-3-column-wrap .slick-list .post-content .title-date, .loop-3-column-wrap .post-content .post-data {
+        left: 10px;
+        right: 10px;
+    }
+
+    .loop-3-column-wrap .loop .entry .post{
+        left: 10px;
+        right: 10px;
+    }
+    .loop-3-column-wrap .loop .entry-info.author-name, .loop-banner .meta-item.meta-item-author {
+        bottom: 0;
+        height: 36px;
+        left: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+    }
+
+}
+@media (min-width: 968px) and (max-width: 1023px){
+
+}
+@media (min-width: 360px) and (max-width: 967px){
+    .loop-3-column-wrap .loop .entry-info.author-name, .loop-banner .meta-item.meta-item-author {
+
+        margin-bottom: 25px;
+
+    }
+    .loop-3-column-wrap .loop .entry .post{
+        display: none;
+    }
+}
+@media (max-width: 359px){
+
+}

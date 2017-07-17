@@ -41,17 +41,20 @@ $ad1 = get_option('ad_1');
         'posts_per_page'    => 6,
         'limit'             => 6,
         'show_pagination'   => false,
-        'image_size'        => 'small',
+        'image_size'        => 'large',
         'fullwidth'         => 1,
         'show_excerpt'      => 1,
-        'excerpt_length'    => '250',
+        'excerpt_length'    => '150',
         'show_sharing_options'=> false,
         'show_title'        => 1,
         'show_meta'         => 1,
         'show_category'     => 1
     ];
 
-    echo ts_blog('slider', $atts);
+    $ts_query =  new WP_Query($atts);
+
+    echo ts_blog('2columncarousel', $atts);
+  //  echo ts_blog('3columncarousel', $atts);
 
     ?>
 </div>
